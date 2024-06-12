@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page with Sidebar and Navigation Menu</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        /* Adjust sidebar width */
+        .sidebar {
+            width: 100%;
+            /* position: fixed; */
+            min-height: 100vh;
+            background-color: #343a40;
+            color: #fff;
+            padding-top: 15px;
+            overflow-y: scroll;
+        }
+
+        /* Set sidebar background color */
+        .sidebar a {
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+
+        /* Content */
+        /* .content {
+            margin-left: 0;
+            padding: 20px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 p-0">
+                <!-- Sidebar -->
+                <div class="sidebar d-none d-lg-block">
+                    <div class="container">
+                        <img src="./assets/logo-192x192.png" alt="" width="30%" style="margin: auto; border-radius: 50%;">
+                        <h5 class="mt-3">My Projects</h5>
+                        <!-- <a href="#">St. Ignatius Cemetery System</a>
+                        <a href="#">Saint Francis College Online Document Request</a>
+                        <a href="#">Saint Francis College Allen Online Document Request</a>
+                        <a href="#">Resort Reservation System</a>
+                        <a href="#">M14000 Clinic</a>
+                        <a href="#">Marisol Income And Expense Tracker</a>
+                        <a href="#">Saint Francis College Enrollment System</a> -->
+                        <a href="./index.html">Home</a>
+                        <a href="./hosted-projects.html">Hosted Projects</a>
+                        <a href="./local-projects.html">Local Projects</a>
+                        <a href="#">Hobbies</a>
+                        <a href="#">Personal Frameworks and Starter Kits</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-12 p-0">
+                <!-- Page content -->
+                <div class="content">
+                    <!-- Navigation menu -->
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">Mark Jason Espelita</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                </ul>
+                                <!-- Sidebar items in dropdown for mobile view -->
+                                <ul class="navbar-nav ml-auto d-lg-none">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Sidebar Items
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="./hosted-projects.html">Hosted Projects</a>
+                                            <a class="dropdown-item" href="./local-projects.html">Local Projects</a>
+                                            <a class="dropdown-item" href="#">Hobbies</a>
+                                            <a class="dropdown-item" href="#">Personal Frameworks and Starter Kits</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+    
+                    <!-- Page content area -->
+                    <div class="container py-4">
+                        <section>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-12 col-md-12">
+                                        <h1>Hello, I am Mark Jason!</h1>
+        
+                                        <p>
+                                            I am 24 years old. I live in Brgy. Salvacion San Isidro Northern Samar, Philippines.
+                                            I am a <b>fullstack web developer</b> experienced in programming languages like <b>PHP</b> and <b>JS</b> and framework like <b>Laravel</b> with <b>Laravel Livewire</b>. I am also experienced on CMS's like <b>Wordpress (Elementor)</b>, 
+                                            <b>GoHighLevel</b> web and funnel builder, <b>ClickFunnels</b> and <b>Hubspot</b>.
+                                        </p>
+
+                                        <p>
+                                           It's been <b>4 years</b> since I started web development since June 24, 2020 on the first IT company that i worked with. Let me take you how it started.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12 col-md-12">
+                                        // image here...
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        
+                        <section class="py-3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>2016 - 2017</h4>
+                                                <small>(Educational Attainment)</small>
+                                                <p>
+                                                    Grade 11 ICT Senior High School and I had no idea what I am doing. :)
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>2017 - 2018</h4>
+                                                <small>(Educational Attainment)</small>
+                                                <p>
+                                                    Grade 12 ICT. C++ sucks but I love web development - HTML and CSS.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>2018 - 2019</h4>
+                                                <small>(Educational Attainment)</small>
+                                                <p>
+                                                    1st year college. IT course hated me so I chose BS Entrepreneurship.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>2019 - Mar. 2020</h4>
+                                                <small>(Educational Attainment)</small>
+                                                <p>
+                                                    2nd year college. It's COVID time, online class only. So I go home and study web development deeply instead. So deeply that it made me <b>DROP OUT</b> of college.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>June 24, 2020</h4>
+                                                <p>
+                                                    Where the magic happened. <b>Qonvex Technology</b> (IT Company) is doing a <b>web development bootcamp</b>, and I joined. From 20 plus bootcampers, only 5 passed (including me).
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="py-3">
+                            <div class="container">
+                                <h4>My Work Experiences</h4>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>June 2020 - Jan. 2021</h4>
+                                                <p>
+                                                    So I was hired...<br>
+                                                    <b>Qonvex Technology</b> <br>
+                                                    <small><b>Type:</b> Web and Mobile Apps Development Company.</small> <br>
+                                                    <small><b>Position:</b> Junior Front End Web Developer.</small> <br>
+                                                    <small><b>Location:</b> Brgy. Obrero, Calbayog City Eastern Samar.</small> <br>
+                                                    <small><b>Experience:</b> 7 months</small> <br>
+                                                    <small><a href="https://qonvextechnology.com">https://qonvextechnology.com</a></small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>Jan. 2021 - Jan. 2022</h4>
+                                                <p>
+                                                    I continue college. Just kidding. LOL<br>
+                                                    <b>Freelancing / Self Study</b> <br>
+                                                    <small><b>Type:</b> Fullstack Laravel + Vue and everything.</small> <br>
+                                                    <small><b>Position:</b> Freelance Web Developer.</small> <br>
+                                                    <small><b>Location:</b> Brgy. Salvacion San Isidro, Northern Samar.</small> <br>
+                                                    <small><b>Experience:</b> 1 year</small> <br>
+                                                    <small><a href="https://markjason.netlify.app">https://markjason.netlify.app</a></small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>Jan. 2022 - Jan. 2023</h4>
+                                                <p>
+                                                    I worked in a super market.<br>
+                                                    <b>Sanvic Supermart Incorporated</b> <br>
+                                                    <small><b>Type:</b> Wholesale and Retail Store.</small> <br>
+                                                    <small><b>Position:</b> Warehouse Checker - Stock Database Monitoring.</small> <br>
+                                                    <small><b>Location:</b> Brgy. Dalakit, Catarman Northern Samar.</small> <br>
+                                                    <small><b>Experience:</b> 1 year</small> <br>
+                                                    <small><a href="https://facebook.com/sanvic.supermart">https://facebook.com/sanvic.supermart</a></small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>Jan. 2023 - Present Day</h4>
+                                                <p>
+                                                    And here we are, today.<br>
+                                                    <b>Mediva Digital Co.</b> <br>
+                                                    <small><b>Type:</b> Digital Marketing Agency.</small> <br>
+                                                    <small><b>Position:</b> Senior Fullstack Web Developer.</small> <br>
+                                                    <small><b>Location:</b> Brgy. Molave, Catarman Northern Samar.</small> <br>
+                                                    <small><b>Experience:</b> 1 year and ongoing...</small> <br>
+                                                    <small><a href="https://medivadigital.com">https://medivadigital.com</a></small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="py-3">
+                            <div class="container">
+                                <h4>My Skills</h4>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5>Technical (Programming/Web Development) Skills</h5>
+                                                <p>
+                                                    - Laravel v11.x <br>
+                                                    - Laravel Livewire v3.x <br>
+                                                    - Vue JS (30%) <br>
+                                                    - React JS (10%) <br>
+                                                    - Alpine JS on Livewire <br>
+                                                    - MySQL Database <br>
+                                                    - SQLite <br>
+                                                    - Wordpress Elementor and Divi Builders <br>
+                                                    - GohighLevel Web and Funnel Builder <br>
+                                                    - Hubspot <br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5>Technical (Non - Programming) Skills</h5>
+                                                <p>
+                                                    - Microsoft Word <br>
+                                                    - Microsoft Excel <br>
+                                                    - Microsoft Powerpoint <br>
+                                                    - Simple Hardware Troubleshooting <br>
+                                                    - LAN Network Troubleshooting <br>
+                                                    - Database Management <br>
+                                                    - Office Related Works <br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5>Non Technical Skills / Soft Skills</h5>
+                                                <p>
+                                                    - I love learning new things. <br>
+                                                    - Attention to detail. <br>
+                                                    - Can work with minimum supervision and produce high quality output. <br>
+                                                    - Compassionate. <br>
+                                                    - Willing to learn and to teach. <br>
+                                                    - Introverted (Silent). <br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (optional) -->
+    <script src="./slim.min.js"></script>
+    <script src="./jquery.slim.popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+</body>
+</html>

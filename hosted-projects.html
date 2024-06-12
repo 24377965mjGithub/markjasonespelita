@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page with Sidebar and Navigation Menu</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        /* Adjust sidebar width */
+        .sidebar {
+            width: 100%;
+            /* position: fixed; */
+            min-height: 100vh;
+            background-color: #343a40;
+            color: #fff;
+            padding-top: 15px;
+            overflow-y: scroll;
+        }
+
+        /* Set sidebar background color */
+        .sidebar a {
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+
+        /* Content */
+        /* .content {
+            margin-left: 0;
+            padding: 20px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 p-0">
+                <!-- Sidebar -->
+                <div class="sidebar d-none d-lg-block">
+                    <div class="container">
+                        <img src="./assets/logo-192x192.png" alt="" width="30%" style="margin: auto; border-radius: 50%;">
+                        <h5 class="mt-3">My Projects</h5>
+                        <!-- <a href="#">St. Ignatius Cemetery System</a>
+                        <a href="#">Saint Francis College Online Document Request</a>
+                        <a href="#">Saint Francis College Allen Online Document Request</a>
+                        <a href="#">Resort Reservation System</a>
+                        <a href="#">M14000 Clinic</a>
+                        <a href="#">Marisol Income And Expense Tracker</a>
+                        <a href="#">Saint Francis College Enrollment System</a> -->
+                        <a href="./index.html">Home</a>
+                        <a href="./hosted-projects.html">Hosted Projects</a>
+                        <a href="./local-projects.html">Local Projects</a>
+                        <a href="#">Hobbies</a>
+                        <a href="#">Personal Frameworks and Starter Kits</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-12 p-0">
+                <!-- Page content -->
+                <div class="content">
+                    <!-- Navigation menu -->
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">Mark Jason Espelita</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                </ul>
+                                <!-- Sidebar items in dropdown for mobile view -->
+                                <ul class="navbar-nav ml-auto d-lg-none">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Sidebar Items
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="./hosted-projects.html">Hosted Projects</a>
+                                            <a class="dropdown-item" href="./local-projects.html">Local Projects</a>
+                                            <a class="dropdown-item" href="#">Hobbies</a>
+                                            <a class="dropdown-item" href="#">Personal Frameworks and Starter Kits</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+    
+                    <!-- Page content area -->
+                    <div class="container py-4">
+                        <section>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-12 col-md-12">
+                                        <h1>Hosted Projects</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        
+                        <section class="py-3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>Saint Francis College Online Document Request With Tracker</h4>
+                                                <small>(Laravel - In Production)</small> <br>
+                                                <a href="https://sfconlinedocumentrequest.com">https://sfconlinedocumentrequest.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>Saint Francis College Allen Online Document Request With SMS</h4>
+                                                <small>(Laravel - In Production)</small> <br>
+                                                <a href="https://sfcallenonlinedocumentrequest.com">https://sfcallenonlinedocumentrequest.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>Tinambacan Resort Reservation System</h4>
+                                                <small>(Laravel - In Production)</small> <br>
+                                                <a href="https://tinambacanonlineresortreservation.online">https://tinambacanonlineresortreservation.online</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>Somoray Park And Resort</h4>
+                                                <small>(HTML CSS - In Production - Outdated)</small> <br>
+                                                <a href="https://somorayparkandresort.netlify.app">https://somorayparkandresort.netlify.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>Portfolio</h4>
+                                                <small>(HTML CSS - In Production - Outdated)</small> <br>
+                                                <a href="https://markjason.netlify.app">https://markjason.netlify.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>Resort Sample Template</h4>
+                                                <small>(HTML CSS - In Production - Hobby)</small> <br>
+                                                <a href="https://resortsmple.netlify.app">https://resortsmple.netlify.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>Dinasour Game</h4>
+                                                <small>(HTML CSS - In Production - Hobby)</small> <br>
+                                                <a href="https://markdinasaur.netlify.app">https://markdinasaur.netlify.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>Shanne</h4>
+                                                <small>(HTML CSS - In Production)</small> <br>
+                                                <a href="https://shanne.netlify.app">https://shanne.netlify.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>MJ Dixie AI Chatbot</h4>
+                                                <small>(HTML CSS - In Production)</small> <br>
+                                                <a href="https://mjdixie.netlify.app">https://mjdixie.netlify.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>COVID Symptoms Analyzer AI</h4>
+                                                <small>(HTML CSS - In Production)</small> <br>
+                                                <a href="https://covidsymps.netlify.app">https://covidsymps.netlify.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>WebiApp</h4>
+                                                <small>(HTML CSS - In Production)</small> <br>
+                                                <a href="https://webiapp.netlify.app">https://webiapp.netlify.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>Todo List PWA Version</h4>
+                                                <small>(HTML CSS - In Production)</small> <br>
+                                                <a href="https://apptodoinstall.netlify.app">https://apptodoinstall.netlify.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>Todo List Web</h4>
+                                                <small>(HTML CSS - In Production)</small> <br>
+                                                <a href="https://onlinetodos.netlify.app">https://onlinetodos.netlify.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>EnVenta</h4>
+                                                <small>(HTML CSS - In Production - Hobby)</small> <br>
+                                                <a href="https://enventa.netlify.app">https://enventa.netlify.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>TMEbdane Online Learning</h4>
+                                                <small>(HTML CSS - In Production - Hobby)</small> <br>
+                                                <a href="https://tmebdane.netlify.app">https://tmebdane.netlify.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>MJ The Handsome - Blogging - Advertising</h4>
+                                                <small>(HTML CSS - In Production - Hobby)</small> <br>
+                                                <a href="https://mjthehandsome.netlify.app">https://mjthehandsome.netlify.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>CheMJ</h4>
+                                                <small>(HTML CSS - In Production)</small> <br>
+                                                <a href="https://chemj.netlify.app">https://chemj.netlify.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>MJ Static Sites</h4>
+                                                <small>(HTML CSS - In Production)</small> <br>
+                                                <a href="https://mjstaticsites.netlify.app">https://mjstaticsites.netlify.app</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (optional) -->
+    <script src="./slim.min.js"></script>
+    <script src="./jquery.slim.popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+</body>
+</html>
