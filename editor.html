@@ -10,8 +10,15 @@
     <meta name="description" content="I am 24 years of age, I reside in Brgy. Salvacion, San Isidro, Northern Samar, Philippines. As a seasoned fullstack web developer, I possess proficiency in programming languages such as PHP and JavaScript, alongside frameworks like Laravel, complemented by expertise in Laravel Livewire. Furthermore, I boast extensive experience in content management systems such as WordPress (utilizing Elementor), GoHighLevel web and funnel builder, ClickFunnels, and Hubspot.">
     <link rel="icon" href="./assets/logo-192x192.png">
     <title>Mark Jason Espelita</title>
+
+    
+	<link rel="stylesheet" href="./assets/live-master/remote/prism.css">
+	<link rel="stylesheet" href="./assets/live-master/remote/prism-line-numbers.css">
+	<link rel="stylesheet" href="./assets/live-master/prism-live.css">
+	<!-- <link rel="stylesheet" href="./assets/live-master/style.css"> -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./bootstrap.min.css">
+
     <!-- <link rel="stylesheet" href="./style.css"> -->
     <style>
         /* Adjust sidebar width */
@@ -37,11 +44,11 @@
             background-color: #495057;
         }
 
-        .editor {
+        /* .editor {
             height: 25vh !important;
-        }
+        } */
         .preview {
-            height: 50vh;
+            height: 70vh;
             border: 2px #3b3b3b solid;
         }
     </style>
@@ -101,7 +108,7 @@
                         <section>
                             <div class="container">
                                 <h4>Real Time Web Editor</h4>
-                                <small>Version 1.0.1</small>
+                                <small>Version 1.0.2</small>
                             </div>
                         </section>
 
@@ -109,12 +116,45 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <textarea id="html-editor" class="editor color-html-editor form-control mb-1 bg-dark text-light" placeholder="Enter HTML code.."></textarea>
-                                        <textarea id="css-editor" class="editor form-control mb-1 bg-dark text-light" placeholder="Enter CSS code.."></textarea>
-                                        <textarea id="js-editor" class="editor form-control mb-1 bg-dark text-light" placeholder="Enter JavaScript code.."></textarea>
+                                        <div class="forn-group">
+                                            <label for="">HTML</label>
+                                            <textarea id="html-editor" class="editor prism-live language-html mb-1" placeholder="Enter HTML code.."></textarea>
+                                        </div>
+                                        <div class="forn-group">
+                                            <label for="">CSS</label>
+                                            <textarea id="css-editor" class="editor prism-live language-css mb-1" placeholder="Enter CSS code.."></textarea>
+                                        </div>
+                                        <div class="forn-group">
+                                            <label for="">JS</label>
+                                            <textarea id="js-editor" class="editor prism-live language-js mb-1" placeholder="Enter JavaScript code.."></textarea>
+                                        </div>
                                     </div>
                                     <div class="col-lg-8 col-md-6 col-sm-12 p-0">
+                                        <label for="">Preview</label>
                                         <iframe id="preview" class="preview form-control"></iframe>
+                                        <div class="card mt-2">
+                                            <div class="card-body">
+                                                <b>Release Notes</b> <br>
+                                                <p>
+                                                    Version 1.0.2 <br>
+                                                    - Syntax highlighting integration using <a href="https://v2.blissfuljs.com/">Blissful JS</a>, <a href="https://prismjs.com/">Prism JS</a>
+                                                    and <a href="https://live.prismjs.com">Prism Live JS</a>. <br>
+                                                </p>
+                                                <p>
+                                                    Version 1.0.1 <br>
+                                                    - Utilize browser local storage to save the code so that the code will remain even after the page load. <br>
+                                                    Need Fix: <br>
+                                                    - No syntax highlighting.
+                                                </p>
+                                                <p>
+                                                    Version 1.0.0 <br>
+                                                    - Integrate HTML CSS JS code on the iframe tag. <br>
+                                                    Need Fix: <br>
+                                                    - Code and pview disappear during page reload. <br>
+                                                    - No syntax highlighting.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -126,11 +166,17 @@
     </div>
 
     <!-- Bootstrap JS and jQuery (optional) -->
-     <script src="./jquery.js"></script>
+    <script src="./jquery.js"></script>
+
+    <script src="./assets/live-master/remote/bliss.shy.min.js"></script>
+    <script src="./assets/live-master/remote/prism.js"></script>
+    <script src="./assets/live-master/remote/prism-live-numbers.js"></script>
+    <script src="./assets/live-master/src/prism-live.js?load=markup,css,javascript"></script>
+    <script src="./assets/live-master/index.js"></script>
+
     <script src="./slim.min.js"></script>
     <script src="./jquery.slim.popper.min.js"></script>
     <script src="./bootstrap.min.js"></script>
-    <script src="./editorTabs.js"></script>
     <script src="./editorScript.js"></script>
 </body>
 </html>

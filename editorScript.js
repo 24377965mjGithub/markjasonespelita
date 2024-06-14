@@ -9,6 +9,14 @@ jsEditor.addEventListener('input', updatePreview);
 
 let storage = JSON.parse(localStorage.getItem('CodeStorage'));
 
+if (!storage) {
+  storage = {
+    html: '\n\n',
+    css: '\n\n',
+    js: '\n\n'
+  };
+}
+
 // populate inputs/textboxes
 htmlEditor.value = storage.html;
 cssEditor.value = storage.css;
@@ -26,9 +34,9 @@ function updatePreview() {
   let storage = JSON.parse(localStorage.getItem('CodeStorage'));
   if (!storage) {
     storage = {
-      html: '',
-      css: '',
-      js: ''
+      html: '\n\n',
+      css: '\n\n',
+      js: '\n\n'
     };
   }
 
