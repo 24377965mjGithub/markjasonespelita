@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <meta name="author" content="Mark Jason Espelita">
     <meta name="title" content="Mark Jason Espelita Web Development">
     <meta name="keywords" content="web design, web development, social media marketing, laravel, laravel livewire">
     <meta name="description" content="I am 24 years of age, I reside in Brgy. Salvacion, San Isidro, Northern Samar, Philippines. As a seasoned fullstack web developer, I possess proficiency in programming languages such as PHP and JavaScript, alongside frameworks like Laravel, complemented by expertise in Laravel Livewire. Furthermore, I boast extensive experience in content management systems such as WordPress (utilizing Elementor), GoHighLevel web and funnel builder, ClickFunnels, and Hubspot.">
     <link rel="icon" href="./assets/logo-192x192.png">
     <title>Mark Jason Espelita</title>
-    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
     <style>
         /* Adjust sidebar width */
         .sidebar {
@@ -37,11 +37,13 @@
             background-color: #495057;
         }
 
-        /* Content */
-        /* .content {
-            margin-left: 0;
-            padding: 20px;
-        } */
+        .editor {
+            height: 25vh !important;
+        }
+        .preview {
+            height: 50vh;
+            border: 2px #3b3b3b solid;
+        }
     </style>
 </head>
 <body>
@@ -56,8 +58,6 @@
                         <a href="./index.html">Home</a>
                         <a href="./hosted-projects.html">Hosted Projects</a>
                         <a href="./local-projects.html">Local Projects</a>
-                        <!-- <a href="#">Hobbies</a>
-                        <a href="#">Personal Frameworks and Starter Kits</a> -->
                     </div>
                 </div>
             </div>
@@ -97,74 +97,24 @@
     
                     <!-- Page content area -->
                     <div class="container py-4">
+
                         <section>
                             <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-6 col-sm-12 col-md-12">
-                                        <h1>Local Projects</h1>
-                                    </div>
-                                </div>
+                                <h4>Real Time Web Editor</h4>
+                                <small>Version 1.0.1</small>
                             </div>
                         </section>
 
-                        
-                        <section class="py-3">
+                        <section>
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4>Realtime Web Editor</h4>
-                                                <small>(HTML, CSS, JS)</small> <br>
-                                                <a href="./editor.html">
-                                                    <button class="btn btn-success mt-2" style="font-size: 12px">View Project</button>
-                                                </a>
-                                            </div>
-                                        </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <textarea id="html-editor" class="editor color-html-editor form-control mb-1 bg-dark text-light" placeholder="Enter HTML code.."></textarea>
+                                        <textarea id="css-editor" class="editor form-control mb-1 bg-dark text-light" placeholder="Enter CSS code.."></textarea>
+                                        <textarea id="js-editor" class="editor form-control mb-1 bg-dark text-light" placeholder="Enter JavaScript code.."></textarea>
                                     </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4>M14000 Therapeutic Clinic</h4>
-                                                <small>(Laravel)</small> <br>
-                                                <a href="mailto:markjasonespelita@gmail.com">
-                                                    <button class="btn btn-secondary mt-2" style="font-size: 12px">Request a Source Code</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4>Marissol Income and Expense Tracker</h4>
-                                                <small>(Laravel)</small> <br>
-                                                <a href="mailto:markjasonespelita@gmail.com">
-                                                    <button class="btn btn-secondary mt-2" style="font-size: 12px">Request a Source Code</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4>Saint Francis College Enrollment System</h4>
-                                                <small>(Laravel)</small> <br>
-                                                <a href="mailto:markjasonespelita@gmail.com">
-                                                    <button class="btn btn-secondary mt-2" style="font-size: 12px">Request a Source Code</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4>Saint Ignatius Cemetery System</h4>
-                                                <small>(PHP)</small> <br>
-                                                <a href="mailto:markjasonespelita@gmail.com">
-                                                    <button class="btn btn-secondary mt-2" style="font-size: 12px">Request a Source Code</button>
-                                                </a>
-                                            </div>
-                                        </div>
+                                    <div class="col-lg-8 col-md-6 col-sm-12 p-0">
+                                        <iframe id="preview" class="preview form-control"></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -176,8 +126,11 @@
     </div>
 
     <!-- Bootstrap JS and jQuery (optional) -->
+     <script src="./jquery.js"></script>
     <script src="./slim.min.js"></script>
     <script src="./jquery.slim.popper.min.js"></script>
     <script src="./bootstrap.min.js"></script>
+    <script src="./editorTabs.js"></script>
+    <script src="./editorScript.js"></script>
 </body>
 </html>
