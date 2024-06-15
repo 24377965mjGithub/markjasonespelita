@@ -16,13 +16,20 @@
     <style>
         /* Adjust sidebar width */
         .sidebar {
-            width: 100%;
+            width: 200px;
             /* position: fixed; */
             min-height: 100vh;
-            background-color: #343a40;
             color: #fff;
             padding-top: 15px;
-            overflow-y: scroll;
+            /* overflow-y: scroll; */
+  position: fixed;
+  /* z-index: 1; */
+  top: 0;
+  left: 0;
+        }
+
+        .black{
+            background: linear-gradient(to right, #000428, #004e92)
         }
 
         /* Set sidebar background color */
@@ -47,7 +54,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-2 p-0">
+            <div class="col-2 p-0 black">
                 <!-- Sidebar -->
                 <div class="sidebar d-none d-lg-block">
                     <div class="container">
