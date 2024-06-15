@@ -107,11 +107,20 @@
                             </div>
                         </section>
 
+
+                        <section>
+                            <div class="container">
+                                <div class="form-group">
+                                    <input type="text" id="search" class="form-control" placeholder="Search Project...">
+                                </div>
+                            </div>
+                        </section>
+
                         
                         <section class="py-3">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2 proj">
                                         <div class="card">
                                             <div class="card-body">
                                                 <h4>Google's Teachable Machine AI Experiment</h4>
@@ -122,7 +131,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2 proj">
                                         <div class="card">
                                             <div class="card-body">
                                                 <h4>Realtime Web Editor</h4>
@@ -133,7 +142,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2 proj">
                                         <div class="card">
                                             <div class="card-body">
                                                 <h4>M14000 Therapeutic Clinic</h4>
@@ -144,7 +153,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2 proj">
                                         <div class="card">
                                             <div class="card-body">
                                                 <h4>Marissol Income and Expense Tracker</h4>
@@ -155,7 +164,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2 proj">
                                         <div class="card">
                                             <div class="card-body">
                                                 <h4>Saint Francis College Enrollment System</h4>
@@ -166,7 +175,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2 proj">
                                         <div class="card">
                                             <div class="card-body">
                                                 <h4>Saint Ignatius Cemetery System</h4>
@@ -187,8 +196,19 @@
     </div>
 
     <!-- Bootstrap JS and jQuery (optional) -->
+    <script src="./jquery.js"></script>
     <script src="./slim.min.js"></script>
     <script src="./jquery.slim.popper.min.js"></script>
     <script src="./bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#search").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $(".proj").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
 </body>
 </html>
