@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Mark Jason Espelita">
+    <meta name="title" content="Mark Jason Espelita Web Development">
+    <meta name="keywords" content="web design, web development, social media marketing, laravel, laravel livewire">
+    <meta name="description" content="I am 24 years of age, I reside in Brgy. Salvacion, San Isidro, Northern Samar, Philippines. As a seasoned fullstack web developer, I possess proficiency in programming languages such as PHP and JavaScript, alongside frameworks like Laravel, complemented by expertise in Laravel Livewire. Furthermore, I boast extensive experience in content management systems such as WordPress (utilizing Elementor), GoHighLevel web and funnel builder, ClickFunnels, and Hubspot.">
+    <link rel="icon" href="./assets/logo-192x192.png">
+    <title>Mark Jason Espelita</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        /* Adjust sidebar width */
+        .sidebar {
+            width: 200px;
+            /* position: fixed; */
+            min-height: 100vh;
+            color: #fff;
+            padding-top: 15px;
+            /* overflow-y: scroll; */
+  position: fixed;
+  /* z-index: 1; */
+  top: 0;
+  left: 0;
+        }
+
+        .black{
+            background: linear-gradient(to right, #000428, #004e92)
+        }
+
+        /* Set sidebar background color */
+        .sidebar a {
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+
+        /* Content */
+        /* .content {
+            margin-left: 0;
+            padding: 20px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 p-0 black">
+                <!-- Sidebar -->
+                <div class="sidebar d-none d-lg-block">
+                    <div class="container">
+                        <img src="./assets/logo-192x192.png" alt="" width="30%" style="margin: auto; border-radius: 50%;">
+                        <h5 class="mt-3">My Projects</h5>
+                        <a href="./index.html">Home</a>
+                        <a href="./hosted-projects.html">Hosted Projects</a>
+                        <a href="./local-projects.html">Local Projects</a>
+                        <a href="./location.html">My Location</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-12 p-0">
+                <!-- Page content -->
+                <div class="content">
+                    <!-- Navigation menu -->
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">Mark Jason Espelita</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="location.html">My Location</a>
+                                    </li>
+                                </ul>
+                                <!-- Sidebar items in dropdown for mobile view -->
+                                <ul class="navbar-nav ml-auto d-lg-none">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Sidebar Items
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="./hosted-projects.html">Hosted Projects</a>
+                                            <a class="dropdown-item" href="./local-projects.html">Local Projects</a>
+                                            <!-- <a class="dropdown-item" href="#">Hobbies</a>
+                                            <a class="dropdown-item" href="#">Personal Frameworks and Starter Kits</a> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+    
+                    <!-- Page content area -->
+                    <div class="container py-4">
+                        <section>
+                            <div class="container">
+                                <h4>Where the hell I am?</h4>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <h5>My Work</h5>
+                                        <small>Brgy. Molave, Catarman Northern Samar - Boys and Toys Motorcycle Shop</small>
+                                        <div style="overflow:hidden;resize:none;max-width:100%;width:100%;height:400px;"><div id="gmap-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=boys+and+toys+catarman+northern+samar+molave&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="our-googlemap-code" href="https://www.bootstrapskins.com/themes" id="authorize-map-data">premium bootstrap themes</a><style>#gmap-canvas img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <h5>My Home</h5>
+                                        <small>Brgy. Salvacion, San Isidro Northern Samar - Purok 2</small>
+                                        <div style="overflow:hidden;resize:none;max-width:100%;width:100%;height:400px;"><div id="gmap-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=salvacion+san+isidro+northern+samar&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="our-googlemap-code" href="https://www.bootstrapskins.com/themes" id="authorize-map-data">premium bootstrap themes</a><style>#gmap-canvas img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (optional) -->
+    <script src="./slim.min.js"></script>
+    <script src="./jquery.slim.popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+</body>
+</html>
