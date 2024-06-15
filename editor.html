@@ -103,18 +103,30 @@
                     </nav>
     
                     <!-- Page content area -->
-                    <div class="container py-4">
+                    <div class="container-fluid py-4">
 
                         <section>
-                            <div class="container">
+                            <div class="container-fluid">
                                 <h4>Real Time Web Editor</h4>
-                                <small>Version 1.0.2</small> <br>
+                                <small>Version 1.0.3</small> <br>
                                 <small>By <i>Mark Jason E.</i></small>
                             </div>
                         </section>
 
                         <section>
-                            <div class="container">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-2">
+                                        <label for="">Header</label> <br>
+                                        <small>for Bootstrap: <code style="color: red">href="./bootstrap.min.css"</code></small>
+                                        <textarea id="header-editor" class="editor prism-live language-html mb-1" placeholder="<link rel='stylesheet' href='...' />"></textarea>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-2">
+                                        <label for="">Footer</label> <br>
+                                        <small>for JQuery: <code style="color: red">src="./jquery.js"</code></small>
+                                        <textarea id="footer-editor" class="editor prism-live language-html mb-1" placeholder="<script src='...'></script>"></textarea>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6 col-sm-12">
                                         <div class="forn-group">
@@ -136,6 +148,11 @@
                                         <div class="card mt-2">
                                             <div class="card-body">
                                                 <b>Release Notes</b> <br>
+                                                <p>
+                                                    Version 1.0.3 <br>
+                                                    - Header links and footer scripts integration, for external libraries and frameworks. <br>
+                                                    - Dark mode theme integration using <a href="https://github.com/PrismJS/prism-themes?tab=readme-ov-file">Prism Themes</a>. Selected dark mode theme: <a href="https://github.com/PrismJS/prism-themes/blob/master/themes/prism-atom-dark.css">Atom-Dark</a>. <br>
+                                                </p>
                                                 <p>
                                                     Version 1.0.2 <br>
                                                     - Syntax highlighting integration using <a href="https://v2.blissfuljs.com/">Blissful JS</a>, <a href="https://prismjs.com/">Prism JS</a>
